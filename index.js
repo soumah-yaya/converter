@@ -9,6 +9,10 @@ const forms = document.querySelectorAll('.center');
 // set click listener to toggle button
 toggle.addEventListener('click', handleToggle);
 
+//get the active item from session storage
+const activeItem = sessionStorage.getItem('active') || 'weight';
+document.querySelector(`[data-title=${activeItem}]`).classList.add('active');
+
 function handleToggle() {
   menu.classList.toggle('hideMenu');
 }
@@ -24,6 +28,8 @@ function handleItemClick(e) {
   });
   //   add active item
   e.target.classList.add('active');
+  // make the active item persistence
+  sessionStorage.setItem('active', e.target.getAttribute('data-title'));
   //   hide the menu
   menu.classList.remove('hideMenu');
   // set current tab
