@@ -55,16 +55,40 @@ ul {
   margin-top: 5px;
 }
 .container .main-content {
+  position: relative;
   flex: 1;
   background-color: purple;
 }
-.container .center {
+.container .main-content .center {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 40%;
-  background-color: pink;
+  width: 80%;
+  padding: 20px;
+  background-color: #fff;
+}
+.container .main-content .half {
+  float: left;
+  width: 50%;
+  margin-top: 16px;
+  padding: 0 8px;
+}
+.container .main-content .half input {
+  display: block;
+  padding: 8px;
+  width: 100%;
+  font-size: 14px;
+}
+.container .main-content .title {
+  background-color: #4CAF50;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.container .main-content .title h2 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 400;
 }
 @media screen and (max-width: 576px) {
   .container {

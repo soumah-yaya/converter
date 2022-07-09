@@ -21,18 +21,120 @@
           <li></li>
         </ul>
         <ul class="menu">
-          <li><button>Convert Temperature</button></li>
           <li><button>Convert Weight</button></li>
+          <li><button>Convert Temperature</button></li>
           <li><button>Convert Length</button></li>
           <li><button>Convert Speed</button></li>
         </ul>
       </div>
       <div class="main-content">
-        <div class="convertTemp center">temp</div>
-        <div class="convertWeight center">Weight</div>
-        <div class="convertLength center">Length</div>
-        <div class="convertSpeed center">speed</div>
+        <!-- weight converter -->
+        <form id="form-weight" class="weight center">
+          <div class="title">
+            <h2>Weight Converter</h2>
+          </div>
+          <p>
+            Type a value in any of the fields to convert between weight
+            measurements:
+          </p>
+          <div class="half">
+            <label for="pound">Pound</label>
+            <input
+              type="number"
+              id="pound"
+              class="half-input half-border"
+              placeholder="Pounds"
+              oninput="weightConverter(this.id,this.value)"
+              onchange="weightConverter(this.id,this.value)"
+              min="0"
+            />
+          </div>
+          <div class="half">
+            <label for="kilograms">Kilograms</label>
+            <input
+              type="number"
+              id="kilograms"
+              class="half-input half-border"
+              placeholder="Kilograms"
+              oninput="weightConverter(this.id,this.value)"
+              onchange="weightConverter(this.id,this.value)"
+              min="0"
+            />
+          </div>
+          <div class="half margin-top">
+            <label for="ounces">Ounces</label>
+            <input
+              type="number"
+              id="ounces"
+              class="half-input half-border"
+              placeholder="Ounces"
+              oninput="weightConverter(this.id,this.value)"
+              onchange="weightConverter(this.id,this.value)"
+              min="0"
+            />
+          </div>
+          <div class="half margin-top">
+            <label for="grams">Grams</label>
+            <input
+              type="number"
+              id="grams"
+              class="half-input half-border"
+              placeholder="grams"
+              oninput="weightConverter(this.id,this.value)"
+              onchange="weightConverter(this.id,this.value)"
+              min="0"
+            />
+          </div>
+        </form>
+         <!-- weight temperature -->
+         <form id="form-temperature" class="temperature center">
+          <div class="title">
+            <h2>Temperature Converter</h2>
+          </div>
+          <p>
+            Type a value in any of the fields to convert between temperature
+            measurements:
+          </p>
+          <div class="half">
+            <label for="fahrenheit">Fahrenheit</label>
+            <input
+              type="number"
+              id="fahrenheit"
+              class="half-input half-border"
+              placeholder="fahrenheit"
+              oninput="temperatureConverter(this.id,this.value)"
+              onchange="temperatureConverter(this.id,this.value)"
+              min="0"
+            />
+          </div>
+          <div class="half">
+            <label for="celsius">Celsius</label>
+            <input
+              type="number"
+              id="celsius"
+              class="half-input half-border"
+              placeholder="celsius"
+              oninput="temperatureConverter(this.id,this.value)"
+              onchange="temperatureConverter(this.id,this.value)"
+              min="0"
+            />
+          </div>
+          <div class="half margin-top">
+            <label for="kelvin">Kelvin</label>
+            <input
+              type="number"
+              id="kelvin"
+              class="half-input half-border"
+              placeholder="kelvin"
+              oninput="temperatureConverter(this.id,this.value)"
+              onchange="temperatureConverter(this.id,this.value)"
+              min="0"
+            />
+          </div>
+          
+        </form>
       </div>
     </div>
+    <script src="weight.js"></script>
   </body>
 </html>
