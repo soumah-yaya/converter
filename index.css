@@ -57,7 +57,7 @@ ul {
 .container .main-content {
   position: relative;
   flex: 1;
-  background-color: purple;
+  background-color: #eee;
 }
 .container .main-content .center {
   position: absolute;

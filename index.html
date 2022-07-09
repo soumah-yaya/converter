@@ -24,7 +24,6 @@
           <li><button>Convert Weight</button></li>
           <li><button>Convert Temperature</button></li>
           <li><button>Convert Length</button></li>
-          <li><button>Convert Speed</button></li>
         </ul>
       </div>
       <div class="main-content">
@@ -37,6 +36,7 @@
             Type a value in any of the fields to convert between weight
             measurements:
           </p>
+          <!-- pound input -->
           <div class="half">
             <label for="pound">Pound</label>
             <input
@@ -49,6 +49,7 @@
               min="0"
             />
           </div>
+          <!-- kilograms input -->
           <div class="half">
             <label for="kilograms">Kilograms</label>
             <input
@@ -61,6 +62,7 @@
               min="0"
             />
           </div>
+          <!-- ounces input -->
           <div class="half margin-top">
             <label for="ounces">Ounces</label>
             <input
@@ -73,6 +75,7 @@
               min="0"
             />
           </div>
+          <!-- grams input -->
           <div class="half margin-top">
             <label for="grams">Grams</label>
             <input
@@ -86,7 +89,7 @@
             />
           </div>
         </form>
-        <!-- weight temperature -->
+        <!--  temperature converter -->
         <form id="form-temperature" class="temperature center">
           <div class="title">
             <h2>Temperature Converter</h2>
@@ -95,6 +98,7 @@
             Type a value in any of the fields to convert between temperature
             measurements:
           </p>
+          <!-- fahrenheit input -->
           <div class="half">
             <label for="fahrenheit">Fahrenheit</label>
             <input
@@ -106,6 +110,7 @@
               onchange="temperatureConverter(this.id,this.value)"
             />
           </div>
+          <!-- celsius input -->
           <div class="half">
             <label for="celsius">Celsius</label>
             <input
@@ -117,6 +122,7 @@
               onchange="temperatureConverter(this.id,this.value)"
             />
           </div>
+          <!-- kelvin input -->
           <div class="half margin-top">
             <label for="kelvin">Kelvin</label>
             <input
@@ -129,9 +135,92 @@
             />
           </div>
         </form>
+        <!--  Length converter -->
+        <form id="form-length" class="length center">
+          <div class="title">
+            <h2>Length Converter</h2>
+          </div>
+          <p>
+            Type a value in any of the fields to convert between length
+            measurements:
+          </p>
+          <!-- feet input -->
+          <div class="half">
+            <label for="feet">Feet</label>
+            <input
+              type="number"
+              id="feet"
+              class="half-input half-border"
+              placeholder="feet"
+              oninput="lengthConverter(this.id,this.value)"
+              onchange="lengthConverter(this.id,this.value)"
+            />
+          </div>
+          <!-- meters input -->
+          <div class="half">
+            <label for="meters">Meters</label>
+            <input
+              type="number"
+              id="meters"
+              class="half-input half-border"
+              placeholder="meters"
+              oninput="lengthConverter(this.id,this.value)"
+              onchange="lengthConverter(this.id,this.value)"
+            />
+          </div>
+          <!-- inches input -->
+          <div class="half margin-top">
+            <label for="inches">Inches</label>
+            <input
+              type="number"
+              id="inches"
+              class="half-input half-border"
+              placeholder="inches"
+              oninput="lengthConverter(this.id,this.value)"
+              onchange="lengthConverter(this.id,this.value)"
+            />
+          </div>
+          <!-- cm input -->
+          <div class="half margin-top">
+            <label for="cm">cm</label>
+            <input
+              type="number"
+              id="cm"
+              class="half-input half-border"
+              placeholder="cm"
+              oninput="lengthConverter(this.id,this.value)"
+              onchange="lengthConverter(this.id,this.value)"
+            />
+          </div>
+          <!-- yards input -->
+          <div class="half margin-top">
+            <label for="yards">Yards</label>
+            <input
+              type="number"
+              id="yards"
+              class="half-input half-border"
+              placeholder="yards"
+              oninput="lengthConverter(this.id,this.value)"
+              onchange="lengthConverter(this.id,this.value)"
+            />
+          </div>
+          <!-- kilometers input -->
+          <div class="half margin-top">
+            <label for="kilometers">Kilometers</label>
+            <input
+              type="number"
+              id="kilometers"
+              class="half-input half-border"
+              placeholder="kilometers"
+              oninput="lengthConverter(this.id,this.value)"
+              onchange="lengthConverter(this.id,this.value)"
+            />
+          </div>
+        </form>
       </div>
     </div>
     <script src="weight.js"></script>
     <script src="temperature.js"></script>
+    <script src="length.js"></script>
   </body>
 </html>
