@@ -1,6 +1,6 @@
 function lengthConverter(id, value) {
   if (value.length === 0) {
-    document.getElementById('form-length').reset();
+    document.getElementById('length').reset();
     return;
   }
   switch (id) {

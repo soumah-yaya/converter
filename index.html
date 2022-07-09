@@ -21,14 +21,14 @@
           <li></li>
         </ul>
         <ul class="menu">
-          <li><button>Convert Weight</button></li>
-          <li><button>Convert Temperature</button></li>
-          <li><button>Convert Length</button></li>
+          <li><button data-title="weight">Convert Weight</button></li>
+          <li><button data-title="temperature">Convert Temperature</button></li>
+          <li><button data-title="length">Convert Length</button></li>
         </ul>
       </div>
       <div class="main-content">
         <!-- weight converter -->
-        <form id="form-weight" class="weight center">
+        <form id="weight" class="center current">
           <div class="title">
             <h2>Weight Converter</h2>
           </div>
@@ -90,7 +90,7 @@
           </div>
         </form>
         <!--  temperature converter -->
-        <form id="form-temperature" class="temperature center">
+        <form id="temperature" class="center">
           <div class="title">
             <h2>Temperature Converter</h2>
           </div>
@@ -136,7 +136,7 @@
           </div>
         </form>
         <!--  Length converter -->
-        <form id="form-length" class="length center">
+        <form id="length" class="center">
           <div class="title">
             <h2>Length Converter</h2>
           </div>
@@ -219,6 +219,7 @@
         </form>
       </div>
     </div>
+    <script src="index.js"></script>
     <script src="weight.js"></script>
     <script src="temperature.js"></script>
     <script src="length.js"></script>

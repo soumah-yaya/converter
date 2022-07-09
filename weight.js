@@ -1,6 +1,6 @@
 function weightConverter(id, value) {
   if (value.length === 0) {
-    document.getElementById('form-weight').reset();
+    document.getElementById('weight').reset();
     return;
   }
   switch (id) {

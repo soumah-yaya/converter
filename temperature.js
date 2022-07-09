@@ -1,6 +1,6 @@
 function temperatureConverter(id, value) {
   if (value.length === 0) {
-    document.getElementById('form-temperature').reset();
+    document.getElementById('temperature').reset();
     return;
   }
   switch (id) {
